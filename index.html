@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego de Preguntas Espaciales</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Juego Espacial</h1>
+  <div class="question-card">
+    <div class="question-image">
+      <img id="question-img" src="" alt="Pregunta Imagen">
+    </div>
+    <div class="question-content">
+      <div id="question" class="question">Cargando pregunta...</div>
+      <div id="options" class="options"></div>
+    </div>
+  </div>
+  
+  <div id="result" class="result"></div>
+
+  <!-- Ventanas emergentes -->
+  <div id="popup-correct" class="popup hidden">
+    <img id="correct-img" src="assets/dancing.gif" alt="Imagen Correcta">
+    <p>¡Correcto!</p>
+    <button onclick="closePopup()">Continuar</button>
+  </div>
+  <div id="popup-wrong" class="popup hidden">
+    <img id="wrong-img" src="assets/dead.gif" alt="Imagen Incorrecta">
+    <p>¡Ejecución fallida!</p>
+    <button onclick="closePopup()">Continuar</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
