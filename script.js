@@ -3,10 +3,10 @@ const quiz = [
     {
         question: "En un entorno multitenant, tienes una aplicación crítica que requiere un aislamiento completo de datos y recursos. ¿Cuál de las siguientes afirmaciones describe mejor cómo Oracle puede proporcionar esta funcionalidad?",
         options: [
-            "Utilizar múltiples bases de datos independientes en diferentes servidores.",
-            "Crear una base de datos contenedora (CDB) y múltiples pluggable databases (PDB), donde cada PDB está aislada.",
-            "Ejecutar la aplicación en un único esquema dentro de la CDB.",
-            "Configurar diferentes usuarios dentro de una sola PDB para manejar datos."
+            "A) Utilizar múltiples bases de datos independientes en diferentes servidores.",
+            "B) Crear una base de datos contenedora (CDB) y múltiples pluggable databases (PDB), donde cada PDB está aislada.",
+            "C) Ejecutar la aplicación en un único esquema dentro de la CDB.",
+            "D) Configurar diferentes usuarios dentro de una sola PDB para manejar datos."
         ],
         answer: 1,
         image: "./assets/among-us.gif"
@@ -14,10 +14,10 @@ const quiz = [
     {
         question: "Un administrador necesita crear una nueva PDB basada en una plantilla existente. ¿Qué componente de la arquitectura multitenant debe usar como base para este proceso?",
         options: [
-            "CDB$ROOT",
-            "PDB$SEED",
-            "Una PDB existente",
-            "Los metadatos del diccionario de datos compartidos"
+            "A) CDB$ROOT",
+            "B) PDB$SEED",
+            "C) Una PDB existente",
+            "D) Los metadatos del diccionario de datos compartidos"
         ],
         answer: 1,
         image: "./assets/Among-US-Gif-13.gif"
@@ -25,10 +25,10 @@ const quiz = [
     {
         question: "Un cliente solicita la migración de su base de datos a otro servidor con una instancia de Oracle. ¿Cuál es una ventaja clave de las PDBs en este proceso?",
         options: [
-            "Las PDBs pueden desconectarse de un CDB y conectarse a otro fácilmente.",
-            "Las PDBs se replican automáticamente en el nuevo servidor.",
-            "La migración de PDBs no requiere acceso a los datos.",
-            "Las PDBs no necesitan reiniciarse tras la migración."
+            "A) Las PDBs pueden desconectarse de un CDB y conectarse a otro fácilmente.",
+            "B) Las PDBs se replican automáticamente en el nuevo servidor.",
+            "C) La migración de PDBs no requiere acceso a los datos.",
+            "D) Las PDBs no necesitan reiniciarse tras la migración."
         ],
         answer: 0,
         image: "./assets/Among-US-Gif-14.gif"
@@ -36,10 +36,10 @@ const quiz = [
     {
         question: "Tienes una CDB con múltiples PDBs. ¿Qué sucede si un usuario realiza un cambio en el componente Root Container (CDB$ROOT)?",
         options: [
-            "El cambio afecta únicamente al usuario conectado.",
-            "El cambio afecta únicamente al PDB que está activo.",
-            "El cambio puede afectar a todas las PDBs dentro de la CDB.",
-            "El cambio no tiene impacto en las PDBs."
+            "A) El cambio afecta únicamente al usuario conectado.",
+            "B) El cambio afecta únicamente al PDB que está activo.",
+            "C) El cambio puede afectar a todas las PDBs dentro de la CDB.",
+            "D) El cambio no tiene impacto en las PDBs."
         ],
         answer: 2,
         image: "./assets/Among-US-Gif-15.gif"
@@ -47,10 +47,10 @@ const quiz = [
     {
         question: "Un desarrollador necesita acceder a una PDB específica dentro de una CDB. ¿Qué debe incluir en su configuración de conexión?",
         options: [
-            "El nombre del Root Container (CDB$ROOT).",
-            "La plantilla utilizada para crear la PDB.",
-            "El nombre del PDB al que desea conectarse.",
-            "Los metadatos compartidos del diccionario de datos."
+            "A) El nombre del Root Container (CDB$ROOT).",
+            "B) La plantilla utilizada para crear la PDB.",
+            "C) El nombre del PDB al que desea conectarse.",
+            "D) Los metadatos compartidos del diccionario de datos."
         ],
         answer: 2,
         image: "./assets/Among-US-Gif-16.gif"
